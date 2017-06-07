@@ -1,0 +1,9 @@
+<!-- index.html -->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<div class="graph" id="graph" style="margin: auto; ">
+</div>
+<script>
+  var data = {{ graph_values|safe }};
+  Plotly.newPlot('graph', data);
+</script>
